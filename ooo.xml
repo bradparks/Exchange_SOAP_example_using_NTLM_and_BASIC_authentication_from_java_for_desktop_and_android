@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<v:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:d="http://www.w3.org/2001/XMLSchema" xmlns:c="http://schemas.xmlsoap.org/soap/encoding/" xmlns:v="http://schemas.xmlsoap.org/soap/envelope/">
+  <v:Body>
+    <GetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <Address>"+emailAddress+"</Address>
+      </Mailbox>
+    </GetUserOofSettingsRequest>
+  </v:Body>
+</v:Envelope>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <h:ServerVersionInfo xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MajorVersion="14" MinorVersion="3" MajorBuildNumber="146" MinorBuildNumber="0" Version="Exchange2010_SP2"/>
+  </s:Header>
+  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <m:FindItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:ResponseMessages>
+        <m:FindItemResponseMessage ResponseClass="Success">
+          <m:ResponseCode>NoError</m:ResponseCode>
+          <m:RootFolder IndexedPagingOffset="3" TotalItemsInView="3" IncludesLastItemInRange="true">
+            <t:Items>
+              <t:Message>
+                <t:ItemId Id="AAMkADg5MmFjNTViLTYwODUtNGNmYi04MzhjLTczZTdkOTZmYjllNwBGAAAAAABFQx5qtI0+R7P3jIlj8lBrBwCGvs35WFEvTaNeDfAlU93XAAAAFfBdAACGvs35WFEvTaNeDfAlU93XAAAAFsfhAAA=" ChangeKey="CQAAABYAAACGvs35WFEvTaNeDfAlU93XAAAAFvGW"/>
+                <t:Subject>Re: test to 2 people</t:Subject>
+                <t:DateTimeReceived>2013-07-15T16:42:58Z</t:DateTimeReceived>
+              </t:Message>
+              <t:Message>
+                <t:ItemId Id="AAMkADg5MmFjNTViLTYwODUtNGNmYi04MzhjLTczZTdkOTZmYjllNwBGAAAAAABFQx5qtI0+R7P3jIlj8lBrBwCGvs35WFEvTaNeDfAlU93XAAAAFfBdAACGvs35WFEvTaNeDfAlU93XAAAAFsfgAAA=" ChangeKey="CQAAABYAAACGvs35WFEvTaNeDfAlU93XAAAAFvGY"/>
+                <t:Subject>test to 2 people</t:Subject>
+                <t:DateTimeReceived>2013-07-15T13:45:34Z</t:DateTimeReceived>
+              </t:Message>
+              <t:Message>
+                <t:ItemId Id="AAMkADg5MmFjNTViLTYwODUtNGNmYi04MzhjLTczZTdkOTZmYjllNwBGAAAAAABFQx5qtI0+R7P3jIlj8lBrBwCGvs35WFEvTaNeDfAlU93XAAAAFfBdAACGvs35WFEvTaNeDfAlU93XAAAAFsfQAAA=" ChangeKey="CQAAABYAAACGvs35WFEvTaNeDfAlU93XAAAAFuV8"/>
+                <t:Subject>test from brad on June 24</t:Subject>
+                <t:DateTimeReceived>2013-06-24T19:36:15Z</t:DateTimeReceived>
+              </t:Message>
+            </t:Items>
+          </m:RootFolder>
+        </m:FindItemResponseMessage>
+      </m:ResponseMessages>
+    </m:FindItemResponse>
+  </s:Body>
+</s:Envelope>

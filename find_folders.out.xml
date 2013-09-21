@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <h:ServerVersionInfo xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MajorVersion="14" MinorVersion="2" MajorBuildNumber="298" MinorBuildNumber="4" Version="Exchange2010_SP2"/>
+  </s:Header>
+  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <m:FindFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:ResponseMessages>
+        <m:FindFolderResponseMessage ResponseClass="Success">
+          <m:ResponseCode>NoError</m:ResponseCode>
+          <m:RootFolder IndexedPagingOffset="10" TotalItemsInView="10" IncludesLastItemInRange="true">
+            <t:Folders>
+              <t:SearchFolder>
+                <t:FolderId Id="AAMkAGMxMThlNmEyLTM5YWUtNDk5ZC1iYjIxLTA5YjlhODg0Y2Q5NAAuAAAAAABzYqKvKcw2QZZIkShJYKhRAQAbGGqNWeIMQ7LimmgOTTR8AAAAtuvfAAA=" ChangeKey="BwAAABYAAAAbGGqNWeIMQ7LimmgOTTR8AAAAtuvi"/>
+                <t:DisplayName>AllItems</t:DisplayName>
+              </t:SearchFolder>
+              <t:SearchFolder>
+                <t:FolderId Id="AAMkAGMxMThlNmEyLTM5YWUtNDk5ZC1iYjIxLTA5YjlhODg0Y2Q5NAAuAAAAAABzYqKvKcw2QZZIkShJYKhRAQAbGGqNWeIMQ7LimmgOTTR8AAACL0iFAAA=" ChangeKey="BwAAABYAAAAbGGqNWeIMQ7LimmgOTTR8AAACL0iJ"/>
+                <t:DisplayName>EAS Search Device:androidc1659186474</t:DisplayName>
+              </t:SearchFolder>
+              <t:SearchFolder>
+                <t:FolderId Id="AAMkAGMxMThlNmEyLTM5YWUtNDk5ZC1iYjIxLTA5YjlhODg0Y2Q5NAAuAAAAAABzYqKvKcw2QZZIkShJYKhRAQAbGGqNWeIMQ7LimmgOTTR8AAACL0owAAA=" ChangeKey="BwAAABYAAAAbGGqNWeIMQ7LimmgOTTR8AAACL0p8"/>
+                <t:DisplayName>EAS Search Device:androidc259148960</t:DisplayName>
+              </t:SearchFolder>
+              <t:SearchFolder>
+                <t:FolderId Id="AAMkAGMxMThlNmEyLTM5YWUtNDk5ZC1iYjIxLTA5YjlhODg0Y2Q5NAAuAAAAAABzYqKvKcw2QZZIkShJYKhRAQAbGGqNWeIMQ7LimmgOTTR8AAAAtuWdAAA=" ChangeKey="CAAAABYAAAAbGGqNWeIMQ7LimmgOTTR8AAAAtuWf"/>
+                <t:DisplayName>Unread Mail</t:DisplayName>
+              </t:SearchFolder>
+              <t:Folder>
+                <t:FolderId Id="AAMkAGMxMThlNmEyLTM5YWUtNDk5ZC1iYjIxLTA5YjlhODg0Y2Q5NAAuAAAAAABzYqKvKcw2QZZIkShJYKhRAQAbGGqNWeIMQ7LimmgOTTR8AAACLA4wAAA=" ChangeKey="AQAAABYAAAAbGGqNWeIMQ7LimmgOTTR8AAACLA4x"/>
+                <t:DisplayName>MailboxMoveHistory</t:DisplayName>
+              </t:Folder>
+              <t:SearchFolder>
+                <t:FolderId Id="AAMkAGMxMThlNmEyLTM5YWUtNDk5ZC1iYjIxLTA5YjlhODg0Y2Q5NAAuAAAAAABzYqKvKcw2QZZIkShJYKhRAQAbGGqNWeIMQ7LimmgOTTR8AAAAtue1AAA=" ChangeKey="BwAAABYAAAAbGGqNWeIMQ7LimmgOTTR8AAAAtue4"/>
+                <t:DisplayName>Reminders</t:DisplayName>
+              </t:SearchFolder>
+              <t:CalendarFolder>
+                <t:FolderId Id="AAMkAGMxMThlNmEyLTM5YWUtNDk5ZC1iYjIxLTA5YjlhODg0Y2Q5NAAuAAAAAABzYqKvKcw2QZZIkShJYKhRAQAbGGqNWeIMQ7LimmgOTTR8AAAAtpESAAA=" ChangeKey="AgAAABYAAAAbGGqNWeIMQ7LimmgOTTR8AAAAtpEx"/>
+                <t:DisplayName>Calendar</t:DisplayName>
+              </t:CalendarFolder>
+              <t:Folder>
+                <t:FolderId Id="AAMkAGMxMThlNmEyLTM5YWUtNDk5ZC1iYjIxLTA5YjlhODg0Y2Q5NAAuAAAAAABzYqKvKcw2QZZIkShJYKhRAQAbGGqNWeIMQ7LimmgOTTR8AAAAtpEMAAA=" ChangeKey="AQAAABYAAAAbGGqNWeIMQ7LimmgOTTR8AAAAtpEv"/>
+                <t:DisplayName>Deleted Items</t:DisplayName>
+              </t:Folder>
+              <t:Folder>
+                <t:FolderId Id="AAMkAGMxMThlNmEyLTM5YWUtNDk5ZC1iYjIxLTA5YjlhODg0Y2Q5NAAuAAAAAABzYqKvKcw2QZZIkShJYKhRAQAbGGqNWeIMQ7LimmgOTTR8AAAAtpEJAAA=" ChangeKey="AQAAABYAAAAbGGqNWeIMQ7LimmgOTTR8AAACLyit"/>
+                <t:DisplayName>Inbox</t:DisplayName>
+              </t:Folder>
+              <t:Folder>
+                <t:FolderId Id="AAMkAGMxMThlNmEyLTM5YWUtNDk5ZC1iYjIxLTA5YjlhODg0Y2Q5NAAuAAAAAABzYqKvKcw2QZZIkShJYKhRAQAbGGqNWeIMQ7LimmgOTTR8AAAAtpELAAA=" ChangeKey="AQAAABYAAAAbGGqNWeIMQ7LimmgOTTR8AAAAtpEw"/>
+                <t:DisplayName>Sent Items</t:DisplayName>
+              </t:Folder>
+            </t:Folders>
+          </m:RootFolder>
+        </m:FindFolderResponseMessage>
+      </m:ResponseMessages>
+    </m:FindFolderResponse>
+  </s:Body>
+</s:Envelope>

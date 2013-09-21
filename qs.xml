@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <t:RequestServerVersion Version="Exchange2010" />
+  </soap:Header>
+  <soap:Body>
+    <m:FindItem Traversal="Shallow">
+      <m:ItemShape>
+        <t:BaseShape>AllProperties</t:BaseShape>
+        <t:AdditionalProperties>
+          <t:FieldURI FieldURI="item:Subject" />
+          <t:FieldURI FieldURI="item:DateTimeReceived" />
+          <t:FieldURI FieldURI="message:From" />
+        </t:AdditionalProperties>
+      </m:ItemShape>
+      <m:IndexedPageItemView MaxEntriesReturned="10" Offset="0" BasePoint="Beginning" />
+      <m:ParentFolderIds>
+        <!--
+             all items
+          <t:FolderId Id="AAMkADg5MmFjNTViLTYwODUtNGNmYi04MzhjLTczZTdkOTZmYjllNwAuAAAAAABFQx5qtI0+R7P3jIlj8lBrAQCGvs35WFEvTaNeDfAlU93XAAAAFua6AAA=" ChangeKey="BwAAABYAAACGvs35WFEvTaNeDfAlU93XAAAAFua9"/>
+
+              <t:Folder>
+                <t:FolderId Id="AAMkADg5MmFjNTViLTYwODUtNGNmYi04MzhjLTczZTdkOTZmYjllNwAuAAAAAABFQx5qtI0+R7P3jIlj8lBrAQCGvs35WFEvTaNeDfAlU93XAAAAFfBdAAA=" ChangeKey="AQAAABYAAACGvs35WFEvTaNeDfAlU93XAAAAFzbf"/>
+                <t:DisplayName>Inbox</t:DisplayName>
+              </t:Folder>
+              <t:Folder>
+                <t:FolderId Id="AAMkADg5MmFjNTViLTYwODUtNGNmYi04MzhjLTczZTdkOTZmYjllNwAuAAAAAABFQx5qtI0+R7P3jIlj8lBrAQCGvs35WFEvTaNeDfAlU93XAAAAFfBfAAA=" ChangeKey="AQAAABYAAACGvs35WFEvTaNeDfAlU93XAAAAFfCE"/>
+                <t:DisplayName>Sent Items</t:DisplayName>
+              </t:Folder>
+          -->
+                <t:FolderId Id="AAMkADg5MmFjNTViLTYwODUtNGNmYi04MzhjLTczZTdkOTZmYjllNwAuAAAAAABFQx5qtI0+R7P3jIlj8lBrAQCGvs35WFEvTaNeDfAlU93XAAAAFfBdAAA=" ChangeKey="AQAAABYAAACGvs35WFEvTaNeDfAlU93XAAAAFzbf"/>
+      </m:ParentFolderIds>
+        <!--
+      <m:QueryString>Subject:Test Body:Brad</m:QueryString>
+          -->
+      <m:QueryString>Subject:test</m:QueryString>
+    </m:FindItem>
+  </soap:Body>
+</soap:Envelope>

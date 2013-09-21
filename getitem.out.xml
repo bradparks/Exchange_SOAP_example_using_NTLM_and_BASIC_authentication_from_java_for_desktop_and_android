@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <h:ServerVersionInfo xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MajorVersion="14" MinorVersion="3" MajorBuildNumber="146" MinorBuildNumber="0" Version="Exchange2010_SP2"/>
+  </s:Header>
+  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:ResponseMessages>
+        <m:GetItemResponseMessage ResponseClass="Success">
+          <m:ResponseCode>NoError</m:ResponseCode>
+          <m:Items>
+            <t:Message>
+              <t:MimeContent CharacterSet="UTF-8">UmVjZWl2ZWQ6IGZyb20gZ2F0ZS5mb3J3YXJkLnNtdHAub3JkMWEuZW1haWxzcnZyLmNvbSAoMTcyLjI2LjAuMSkgYnkNCiBPUkQySFVCMzMubWV4MDUubWxzcnZyLmNvbSAoMTcyLjI2LjEuMTM1KSB3aXRoIE1pY3Jvc29mdCBTTVRQIFNlcnZlciAoVExTKSBpZA0KIDE0LjMuMTIzLjM7IE1vbiwgMjQgSnVuIDIwMTMgMTQ6MzY6MTUgLTA1MDANClJldHVybi1QYXRoOiA8YnJhZHBAbGFzaHBvaW50LmNvbT4NClgtU3BhbS1UaHJlc2hvbGQ6IDk1DQpYLVNwYW0tU2NvcmU6IDANClgtU3BhbS1GbGFnOiBOTw0KWC1WaXJ1cy1TY2FubmVkOiBPSw0KQXV0aGVudGljYXRpb24tUmVzdWx0czogc210cDM1LmdhdGUub3JkMWEucnNhcHBzLm5ldCB4LXRscy5zdWJqZWN0PSIvQz1VUy9TVD1DYWxpZm9ybmlhL0w9TW91bnRhaW4gVmlldy9PPUdvb2dsZSBJbmMvQ049c210cC5nbWFpbC5jb20iOyBhdXRoPXBhc3MgKGNpcGhlcj1SQzQtU0hBKQ0KWC1NZXNzYWdlU25pZmZlci1TY2FuLVJlc3VsdDogMA0KWC1NZXNzYWdlU25pZmZlci1SdWxlczogMC0wLTAtMjQ4My1jDQpYLUNNQUUtU2Nhbi1SZXN1bHQ6IDANClgtQ05GUy1BbmFseXNpczogdj0xLjAgYz0xIGE9b0U2OHlmMHZ6S01BOjEwIGE9Sng0a0taYzFId0JadzloZFI5QUE6OSBhPXdQTkx2ZkdUZUVJQToxMA0KWC1PcmlnLVRvOiBhbmRyb2lkMkBzYzRqLm9yZw0KWC1PcmlnaW5hdGluZy1JcDogWzIwOS44NS4yMjAuNDVdDQpSZWNlaXZlZDogZnJvbSBbMjA5Ljg1LjIyMC40NV0gKFsyMDkuODUuMjIwLjQ1OjQ4MzU2XQ0KIGhlbG89bWFpbC1wYTAtZjQ1Lmdvb2dsZS5jb20pCWJ5IHNtdHAzNS5nYXRlLm9yZDFhLnJzYXBwcy5uZXQgKGVudmVsb3BlLWZyb20NCiA8YnJhZHBAbGFzaHBvaW50LmNvbT4pCShlY2VsZXJpdHkgMi4yLjMuNDkgcig0MjA2MC80MjA2MSkpIHdpdGggRVNNVFBTDQogKGNpcGhlcj1SQzQtU0hBCXN1YmplY3Q9Ii9DPVVTL1NUPUNhbGlmb3JuaWEvTD1Nb3VudGFpbiBWaWV3L089R29vZ2xlDQogSW5jL0NOPXNtdHAuZ21haWwuY29tIikgCWlkIDdEL0E3LTAyMjIxLTA5Rjk4QzE1OyBNb24sIDI0IEp1biAyMDEzIDE1OjM1OjQ0DQogLTA0MDANClJlY2VpdmVkOiBieSBtYWlsLXBhMC1mNDUuZ29vZ2xlLmNvbSB3aXRoIFNNVFAgaWQgYmk1c28xMTUyMjgyN3BhZC40DQogICAgICAgIGZvciA8YW5kcm9pZDJAc2M0ai5vcmc+OyBNb24sIDI0IEp1biAyMDEzIDEyOjM1OjQzIC0wNzAwIChQRFQpDQpYLUdvb2dsZS1ES0lNLVNpZ25hdHVyZTogdj0xOyBhPXJzYS1zaGEyNTY7IGM9cmVsYXhlZC9yZWxheGVkOw0KICAgICAgICBkPWdvb2dsZS5jb207IHM9MjAxMjAxMTM7DQogICAgICAgIGg9bWltZS12ZXJzaW9uOmRhdGU6bWVzc2FnZS1pZDpzdWJqZWN0OmZyb206dG86Y29udGVudC10eXBlDQogICAgICAgICA6eC1nbS1tZXNzYWdlLXN0YXRlOw0KICAgICAgICBiaD1qZGxnTnpSRS9qV1J0VDJMeEh6UGhreUptZ1VoUzBVVk9VS05uYjRVbWY4PTsNCiAgICAgICAgYj1kV2puTi9xeXU1OGlYeHVQazB4Uk5aKzJHOFMweldMVHRIcjJabUpkVWpsZlp3MW1rVmN4NDNFbTNYbWhIcnZnTkENCiAgICAgICAgIGFHQ0tNZm9STFpsc1NQanQvZzdTNitKNTZodVVCQzgwS2owUzh0WjhoNzArejlDV2pVYnc4M0kyL0xtckN4a0tDT1RYDQogICAgICAgICBKSU9YYmVpUFIvY0FQQSs3UVZ2bjNJUzJKdnhJVWx1VDYvYzNNWWZ0OXR5OGh4aFJRV01aTlA0Sk1wYXQ1eTk5aXFqWg0KICAgICAgICAgNlJ0VTBjYi8rajVnNXYyaTRuSTdGajNQZkFaeHQ1R2x6WXAveXlTYWl1bEVwbW1tQWluM2pyWVNCbGNTa1dWbC9LZ0gNCiAgICAgICAgIGRNOUY2cDcwbFpwb0FqRFF4Mm44UFFpa0tiZVloc0ZpV2o1SUlWS3ZiYlNhUXdUTk1pNjdmNVFQR2lnNnY5ekY3TjQ1DQogICAgICAgICA0aUNRPT0NClgtUmVjZWl2ZWQ6IGJ5IDEwLjY2LjIzMi40MiB3aXRoIFNNVFAgaWQgdGwxMG1yMjg3NzE4NDFwYWMuMTU5LjEzNzIxMDI1NDM0MTg7DQogTW9uLCAyNCBKdW4gMjAxMyAxMjozNTo0MyAtMDcwMCAoUERUKQ0KUmVjZWl2ZWQ6IGJ5IDEwLjY4LjIxLjE2MiB3aXRoIEhUVFA7IE1vbiwgMjQgSnVuIDIwMTMgMTI6MzU6NDMgLTA3MDAgKFBEVCkNCkRhdGU6IE1vbiwgMjQgSnVuIDIwMTMgMTY6MzU6NDMgLTAzMDANCk1lc3NhZ2UtSUQ6IDxDQUV2UlA3VTh5alFob0FvUW9EazY3RjhlXzRWQmU0VDZjZzJxeHkwa2lSSnY4TEpVUkFAbWFpbC5nbWFpbC5jb20+DQpTdWJqZWN0OiB0ZXN0IGZyb20gYnJhZCBvbiBKdW5lIDI0DQpGcm9tOiBCcmFkIFBhcmtzIDxicmFkcEBsYXNocG9pbnQuY29tPg0KVG86IDxhbmRyb2lkMkBzYzRqLm9yZz4NCkNvbnRlbnQtVHlwZTogbXVsdGlwYXJ0L2FsdGVybmF0aXZlOyBib3VuZGFyeT0iMDQ3ZDdiMTEyMDk1YjIzY2RhMDRkZmViODQ0NSINClgtR20tTWVzc2FnZS1TdGF0ZTogQUxvQ29RbUdTdUMvZkFJZFpYZzkwaXZsVWd3SHZaenZWU1pSYlZYTVNyTzZVNlBhVFBuT29UZmRJQ1VtMFlCc0dESnlkdk0xOUl1Sw0KWC1NUy1FeGNoYW5nZS1Pcmdhbml6YXRpb24tQXV0aFNvdXJjZTogT1JEMkhVQjMzLm1leDA1Lm1sc3J2ci5jb20NClgtTVMtRXhjaGFuZ2UtT3JnYW5pemF0aW9uLUF1dGhBczogQW5vbnltb3VzDQpYLU1TLUV4Y2hhbmdlLU9yZ2FuaXphdGlvbi1BVlN0YW1wLU1haWxib3g6IFNNRVhyXmRFOzEwMTExMDA7MDtUaGlzIG1haWwgaGFzDQogYmVlbiBzY2FubmVkIGJ5IFRyZW5kIE1pY3JvIFNjYW5NYWlsIGZvciBNaWNyb3NvZnQgRXhjaGFuZ2U7DQpYLU1TLUV4Y2hhbmdlLU9yZ2FuaXphdGlvbi1TQ0w6IDANCk1JTUUtVmVyc2lvbjogMS4wDQoNCi0tMDQ3ZDdiMTEyMDk1YjIzY2RhMDRkZmViODQ0NQ0KQ29udGVudC1UeXBlOiB0ZXh0L3BsYWluOyBjaGFyc2V0PSJJU08tODg1OS0xIg0KDQpCcmFkDQoNCi0tMDQ3ZDdiMTEyMDk1YjIzY2RhMDRkZmViODQ0NQ0KQ29udGVudC1UeXBlOiB0ZXh0L2h0bWw7IGNoYXJzZXQ9IklTTy04ODU5LTEiDQoNCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PWlzby04ODU5LTEiPjxkaXYgZGlyPSJsdHIiPkJyYWQ8L2Rpdj4NCg0KLS0wNDdkN2IxMTIwOTViMjNjZGEwNGRmZWI4NDQ1LS0NCg==</t:MimeContent>
+              <t:ItemId Id="AAMkADg5MmFjNTViLTYwODUtNGNmYi04MzhjLTczZTdkOTZmYjllNwBGAAAAAABFQx5qtI0+R7P3jIlj8lBrBwCGvs35WFEvTaNeDfAlU93XAAAAFfBdAACGvs35WFEvTaNeDfAlU93XAAAAFsfQAAA=" ChangeKey="CQAAABYAAACGvs35WFEvTaNeDfAlU93XAAAAFuV8"/>
+              <t:Subject>test from brad on June 24</t:Subject>
+              <t:Sensitivity>Normal</t:Sensitivity>
+              <t:Body BodyType="HTML">&lt;html&gt;&#13;
+&lt;head&gt;&#13;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;&#13;
+&lt;/head&gt;&#13;
+&lt;body&gt;&#13;
+&lt;div dir="ltr"&gt;Brad&lt;/div&gt;&#13;
+&lt;/body&gt;&#13;
+&lt;/html&gt;&#13;
+</t:Body>
+              <t:Size>704</t:Size>
+              <t:DateTimeSent>2013-06-24T19:35:43Z</t:DateTimeSent>
+              <t:DateTimeCreated>2013-06-24T19:36:15Z</t:DateTimeCreated>
+              <t:ResponseObjects>
+                <t:ReplyToItem/>
+                <t:ReplyAllToItem/>
+                <t:ForwardItem/>
+              </t:ResponseObjects>
+              <t:HasAttachments>false</t:HasAttachments>
+              <t:IsAssociated>false</t:IsAssociated>
+              <t:ToRecipients>
+                <t:Mailbox>
+                  <t:Name>Daws Moss</t:Name>
+                  <t:EmailAddress>android2@sc4j.org</t:EmailAddress>
+                  <t:RoutingType>SMTP</t:RoutingType>
+                  <t:MailboxType>Mailbox</t:MailboxType>
+                </t:Mailbox>
+              </t:ToRecipients>
+              <t:IsReadReceiptRequested>false</t:IsReadReceiptRequested>
+              <t:From>
+                <t:Mailbox>
+                  <t:Name>Brad Parks</t:Name>
+                  <t:EmailAddress>bradp@lashpoint.com</t:EmailAddress>
+                  <t:RoutingType>SMTP</t:RoutingType>
+                  <t:MailboxType>OneOff</t:MailboxType>
+                </t:Mailbox>
+              </t:From>
+              <t:IsRead>true</t:IsRead>
+            </t:Message>
+          </m:Items>
+        </m:GetItemResponseMessage>
+      </m:ResponseMessages>
+    </m:GetItemResponse>
+  </s:Body>
+</s:Envelope>
