@@ -1,19 +1,14 @@
 import java.io.IOException;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.ParserConfigurationException;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
-import org.w3c.dom.Node;
 import org.w3c.dom.Element;
 
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.Locale;
 import java.util.Scanner;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -21,13 +16,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.OutputStream;
 import java.io.StringReader;
 import java.io.UnsupportedEncodingException;
-import java.nio.charset.Charset;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Source;
 import javax.xml.transform.Transformer;
@@ -44,10 +34,7 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.FileUtils;
-import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
 
 public class MainApp 
 {
@@ -55,13 +42,32 @@ public class MainApp
   {
     try
     {
+      // NOTE:  for most of these tests, you'll need to edit the associated XML file , and change parms to match your account.
+	  // e.g. for the "qs" example, edit the "qs.xml" file and change it as you see fit.
+      // You'll also need to edit the exchange credentials in the "test" method.
+    
+      // A search
       test("qs");
+      
+      // Get folder info
       test("get_folder");
+      
+      // Get out of office settings
       test("ooo");
+      
+      /*
+      // Find a list of all folders
       test("find_folders");
-      //test("get_items");
-      //getMessageBody();
-      //getFolderIdByName("Sent Items");
+      
+      // Get info about particular items
+      test("get_items");
+      
+      // Get message body for particular items
+      getMessageBody();
+      
+      // Get info about a folder
+      getFolderIdByName("Sent Items");
+      */
     }
     catch(Exception e)
     {
@@ -99,6 +105,8 @@ public class MainApp
       {
         result = sendRequestUsingNtlmAuthentication(testName, username, password, workstation, domain, server, serverPort, serverProtocol, requestAbsoluteUrl, requestData);
       }
+      
+      return result;
     }
     catch (Throwable e)
     {
@@ -330,8 +338,8 @@ public class MainApp
   private static String appFile(String filename, Object... args)
   {
 
-    you'll need to change this to your own folder ;-) Better to post to github than worry about it being perfect, right????
-
+	You'll need to change this path to the path where the app is ;-)
+	  
     String result = "/Users/Brad/ws5/TestNTLM/" + filename + ".xml";
     return result;
   }
@@ -378,12 +386,6 @@ public class MainApp
       return null;
     }
   }
-
-  private static String createOutOfOfficeSoapRequest(String emailAddress)
-  {
-    String result = getFile("ooo");
-    return result;
-  }   
 
   private static String convertStreamToString(java.io.InputStream is) 
   {
@@ -461,7 +463,7 @@ public class MainApp
   }
 
 
-  public static void sendRequestUsingBasicAuthentication(String username, String password, String workstation, String domain, String server, int serverPort, String serverProtocol, String requestAbsoluteUrl, String requestData) throws Throwable
+  public static String sendRequestUsingBasicAuthentication(String cmd, String username, String password, String workstation, String domain, String server, int serverPort, String serverProtocol, String requestAbsoluteUrl, String requestData) throws Throwable
   {
     DefaultHttpClient httpClient = new DefaultHttpClient();
     String authHeaderValue = "Basic " + Base64.encodeBase64String((username + ":" + password).getBytes());
@@ -469,7 +471,10 @@ public class MainApp
     // Uncomment and Use the following line instead, if targetting android
     // String authHeaderValue = "Basic " + org.kobjects.base64.Base64.encode((username + ":" + password).getBytes());
 
-    sendRequest(httpClient, requestData, requestAbsoluteUrl, authHeaderValue);
+    System.out.println("");
+    System.out.println(cmd);
+    
+    return sendRequest(httpClient, requestData, requestAbsoluteUrl, authHeaderValue);
   }
 
   private static String sendRequest(DefaultHttpClient httpClient, String requestContent, String serviceUrl, String authHeaderValue) throws Throwable 
