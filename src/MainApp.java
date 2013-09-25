@@ -10,12 +10,10 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
-import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.StringReader;
 import java.io.UnsupportedEncodingException;
 import javax.xml.transform.OutputKeys;
@@ -83,10 +81,10 @@ public class MainApp
 			String workstation = "";
 			String domain = "";
 
-			String username = "yourusername@test.com";
+			String username = "YourUserName@YourExchangeServer.com";
 			String password = "YourPassword";
-			String server = "connect.emailsrvr.com";
-			String requestAbsoluteUrl = "https://connect.emailsrvr.com/EWS/Exchange.asmx";
+			String server = "www.YourExchangeServer.com";
+			String requestAbsoluteUrl = "https://www.YourExchangeServer.com/EWS/Exchange.asmx";
 			String requestData;
 
 			requestData = getFile(testName);
@@ -104,6 +102,17 @@ public class MainApp
 			if (result == null)
 			{
 				result = sendRequestUsingNtlmAuthentication(testName, username, password, workstation, domain, server, serverPort, serverProtocol, requestAbsoluteUrl, requestData);
+			}
+
+			if (result != null)
+			{
+				result = formatXml(result);
+	
+				System.out.println("Result formatted");
+				System.out.println(result);
+				
+				// Save the response in an xml file, with a .out extension.
+				setFile(testName + ".out", result);
 			}
 
 			return result;
@@ -337,9 +346,7 @@ public class MainApp
 
 	private static String appFile(String filename, Object... args)
 	{
-
-		You'll need to change this path to the path where the app is ;-)
-
+		//You'll need to change this path to the path where the app is ;-)
 		String result = "/Users/Brad/ws5/TestNTLM/" + filename + ".xml";
 		return result;
 	}
@@ -419,49 +426,8 @@ public class MainApp
 		System.out.println(cmd);
 		String result = sendRequest(httpClient, requestData, requestAbsoluteUrl, null);
 
-		if (result != null)
-		{
-			result = formatXml(result);
-
-			System.out.println("Result formatted");
-			System.out.println(result);
-			setFile(cmd + ".out", result);
-		}
-
 		return result;
 	}
-
-	public static String runShellCmd(String cmd) 
-	{
-		try
-		{
-			String result = "";
-
-			Runtime rt = Runtime.getRuntime();
-
-			Process proc = rt.exec(cmd);
-			String s;
-
-			// read the output from the command
-			BufferedReader stdInput = new BufferedReader(new InputStreamReader(proc.getInputStream()));
-			while ((s = stdInput.readLine()) != null) {
-				result += s;
-			}
-
-			// read any errors from the attempted command
-			BufferedReader stdError = new BufferedReader(new InputStreamReader(proc.getErrorStream()));
-			while ((s = stdError.readLine()) != null) {
-				result += s;
-			}
-
-			return result;
-		}
-		catch(Exception e)
-		{
-			return null;
-		}
-	}
-
 
 	public static String sendRequestUsingBasicAuthentication(String cmd, String username, String password, String workstation, String domain, String server, int serverPort, String serverProtocol, String requestAbsoluteUrl, String requestData) throws Throwable
 	{
@@ -475,6 +441,7 @@ public class MainApp
 		System.out.println(cmd);
 
 		return sendRequest(httpClient, requestData, requestAbsoluteUrl, authHeaderValue);
+
 	}
 
 	private static String sendRequest(DefaultHttpClient httpClient, String requestContent, String serviceUrl, String authHeaderValue) throws Throwable 

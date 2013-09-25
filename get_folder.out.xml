@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MajorVersion="14" MinorVersion="2" MajorBuildNumber="298" MinorBuildNumber="4"/>
+    <h:ServerVersionInfo xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MajorVersion="14" MinorVersion="3" MajorBuildNumber="158" MinorBuildNumber="1"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <m:GetFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
@@ -10,11 +10,11 @@
           <m:ResponseCode>NoError</m:ResponseCode>
           <m:Folders>
             <t:Folder>
-              <t:FolderId Id="AAAgAHRlc3Q5QGNvbnN1bHRhbnQudHVya2NlbGwuY29tLnRyAC4AAAAAAHNioq8pzDZBlkiRKElgqFEBABsYao1Z4gxDsuKaaA5NNHwAAAC2kQkAAA==" ChangeKey="AQAAABYAAAAbGGqNWeIMQ7LimmgOTTR8AAACLyit"/>
+              <t:FolderId Id="AQARAGFuZHJvaWQyQHNjNGoub3JnAC4AAANFQx5qtI0+R7P3jIlj8lBrAQCGvs35WFEvTaNeDfAlU93XAAABFfBdAAAA" ChangeKey="AQAAABYAAACGvs35WFEvTaNeDfAlU93XAAAAF30+"/>
               <t:DisplayName>Inbox</t:DisplayName>
-              <t:TotalCount>32</t:TotalCount>
+              <t:TotalCount>34</t:TotalCount>
               <t:ChildFolderCount>0</t:ChildFolderCount>
-              <t:UnreadCount>7</t:UnreadCount>
+              <t:UnreadCount>0</t:UnreadCount>
             </t:Folder>
           </m:Folders>
         </m:GetFolderResponseMessage>
@@ -22,9 +22,9 @@
           <m:ResponseCode>NoError</m:ResponseCode>
           <m:Folders>
             <t:Folder>
-              <t:FolderId Id="AAAgAHRlc3Q5QGNvbnN1bHRhbnQudHVya2NlbGwuY29tLnRyAC4AAAAAAHNioq8pzDZBlkiRKElgqFEBABsYao1Z4gxDsuKaaA5NNHwAAAC2kQwAAA==" ChangeKey="AQAAABYAAAAbGGqNWeIMQ7LimmgOTTR8AAAAtpEv"/>
+              <t:FolderId Id="AQARAGFuZHJvaWQyQHNjNGoub3JnAC4AAANFQx5qtI0+R7P3jIlj8lBrAQCGvs35WFEvTaNeDfAlU93XAAABFfBgAAAA" ChangeKey="AQAAABYAAACGvs35WFEvTaNeDfAlU93XAAAAFfCD"/>
               <t:DisplayName>Deleted Items</t:DisplayName>
-              <t:TotalCount>6</t:TotalCount>
+              <t:TotalCount>0</t:TotalCount>
               <t:ChildFolderCount>0</t:ChildFolderCount>
               <t:UnreadCount>0</t:UnreadCount>
             </t:Folder>
